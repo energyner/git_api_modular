@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 5 - Programando API </title>
+     <!--Aplicando estilo a una estructura responsivo de tres columnas -->
+ <link rel="stylesheet" href="../client/style.css" type="text/css"  >
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+<header>
+    <h3> Class 5. Quinta Parte - APIs </h3>  
+   <p>Los scripts y ejercicios se encuentran en el Libro 5 
+    Quinta Parte, Programando Paso a Paso y Más a la venta en Amazon.</p>
+</header>
+<!--3 Divisiones responsives-->
+<div class="wrapper"> 
+    <div class="column"> <!-- Primera división -->
+        <h3 class="subcapitulo1">APIs programadas y formas de acceso para ejecutarlas</h3>
+<h3 class="subcapitulo2"> Plantilla para la Programación de APIs.</h3>
+<h4> APIs en el entorno externo. Acceso desde la Terminal PowerShell y CMD de Window.</h4>
+<p><b>Desarrollo y consumo de las APIs utilizando Node.js y Express.</b><br>
+El consumo de este producto en su versión de prueba, se realizará desde la Terminal 
+PowerShell y CMD directamente desde Window o desde el editor Visual Studio Code.<br><br>
+Para saber más de esta práctica, ir al apartado 2.7.1 APIs en el entorno local,  del Libro 5 Quinta Parte. Instructivo 
+Programando Paso a Paso y Más.</p>
+
+<h4> Acceso a las APIs programadas local y externamente desde la interfaz del navegador.</h4>
+<p><b> 1- API Consumo Energetico</b></p>
+<!--API Consumo Energetico-->
+<form id="consumo-form">
+    <label for="potencia">Potencia:kW</label>
+    <input type="number" id="potencia" name="potencia" placeholder="potencia" required>
+    <label for="horas">Horas:h</label>
+    <input type="number" id="horas" name="horas" placeholder="horas" required>
+    <button type="submit">Calcular</button>
+</form>
+
+<h4> Resultado Consumo Energético, kW/h:</h4>
+<p id="resultadoConsumo"></p>
+
+<p><b>2-  API Produccion Solar</b></p>
+<!--API Produccion Solar-->
+<form id="produccion-form">
+    <label for="area">Área: m2</label>
+    <input type="number" id="area" name="area" placeholder="area"  required>
+    <label for="irradiacion">Irradiación: kW/h-m2</label>
+    <input type="number" id="irradiacion" name="irradiacion" placeholder="irradiacion"  required>
+    <label for="eficiencia">Eficiencia: (0 y 1)</label>
+    <input type="number" id="eficiencia" name="eficiencia" placeholder="eficiencia" step="0.01" required>
+    <button type="submit">Calcular</button>
+</form>
+
+<h4> Resultado Producción Solar, kWh:</h4>
+<p id="resultadoSolar"></p>
+
+
+
+</div>
+
+    <div class="column"> <!-- Segunda división -->
+        <h3 class="subcapitulo1"> Incorporar nuevas APIs al sistema programado.</h3>
+        <p><b>Título </b></p>
+        <p><b>Sub Subtítulo </b></p>
+        
+ </div>
+
+    <div class="column"> <!-- Tercera división -->
+        <h3 class="subcapitulo1"> Incorporar nuevas APIs al sistema programado.</h3>
+        <p><b>Título </b></p>
+        <p><b>Sub Subtítulo </b></p>
+
+</div>
+
+</div>
+<footer>
+    <p>© 2025  Plantilla - APIs. (Cálculos Técnicos)</p>
+</footer>
+
+
+<script type="module" src="../client/nav.js"></script>
+</body>
+</html>

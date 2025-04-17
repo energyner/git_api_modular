@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>  API Consumo Energético </title>
+     <!--Aplicando estilo a una estructura responsivo de tres columnas -->
+ <link rel="stylesheet" href="./style-consumption.css" type="text/css"  >
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+<header>
+    <h3> APIs Calculador Consumo Energéticos - APIs </h3>  
+   <p>Los scripts y ejercicios se encuentran en el Libro 5 -
+    Programando Paso a Paso y Más a la venta en Amazon.</p>
+</header>
+<!--2 Divisiones responsives-->
+<div class="wrapper"> 
+    <div class="column"> <!-- Primera división -->
+        <h3 class="subcapitulo1">Desarrollo de API en una arquitectura modular</h3>
+<h3 class="subcapitulo2"> Calculador básico del consumo energetico en kWh.</h3>
+<h4>Acceso desde la Terminal PowerShell, CMD de Window y desde la interfaz del navegador.</h4>
+<p><b>Algoritmos en JabaScript desarrollado en ambiente Node.js y Express.</b><br>
+El consumo de este producto en su versión de prueba, se puede realizar desde la Terminal 
+PowerShell y CMD de Window o desde la interfaz del navegador. <br><br>
+Para saber más de esta práctica, consultar el Libro 5 - Instructivo - 
+Programando Paso a Paso y Más.</p>
+
+<h4> Acceso a las APIs programadas local y externamente desde la interfaz del navegador.</h4>
+<p><b> API Consumo Energetico</b></p>
+<!--API Consumo Energetico-->
+<form id="consumo-form">
+    <label for="potencia">Potencia:kW</label>
+    <input type="number" id="potencia" name="potencia" placeholder="potencia" required>
+    <label for="horas">Horas:h</label>
+    <input type="number" id="horas" name="horas" placeholder="horas" required>
+    <button type="submit">Calcular</button>
+</form>
+
+<h4> Resultado Consumo Energético, kW/h:</h4>
+<p id="resultadoConsumo"></p>
+
+</div>
+
+    <div class="column"> <!-- Segunda división -->
+        <h3 class="subcapitulo1"> Descripción del producto.</h3>
+        <p><b>Objetivo </b></p>
+        <p><b>Modo de Operación </b></p>
+        <p><b>Resultado </b></p>
+        
+ </div>
+
+</div>
+<footer>
+    <p>© 2025  Plantilla - APIs. (Cálculos Técnicos)</p>
+</footer>
+
+<script type="module" src="./nav-consumption.mjs"></script>
+
+</body>
+</html>
