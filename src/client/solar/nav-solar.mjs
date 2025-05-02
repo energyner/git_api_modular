@@ -15,7 +15,7 @@ document.getElementById('produccion-form').addEventListener('submit', (event) =>
     const eficiencia = document.getElementById('eficiencia').value;
 
 // Realizar la solicitud al servidor
-    fetch('http://localhost:3008/api/produccion-solar', {
+    fetch('http://localhost:3010/api/produccion-solar', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
