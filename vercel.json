@@ -15,8 +15,8 @@
     }
   ],
   "routes": [
-   { "src": "/api/consumo-energetico/(.*)", "dest": "src/server/consumo-server.mjs" },
-  { "src": "/api/huella-carbono/(.*)", "dest": "src/server/footprint-server.mjs" },
-  { "src": "/api/produccion-solar/(.*)", "dest": "src/server/solar-server.mjs" }
+   { "src": "/api/consumo-energetico", "dest": "src/server/consumo-server.mjs" },
+  { "src": "/api/huella-carbono", "dest": "src/server/footprint-server.mjs" },
+  { "src": "/api/produccion-solar", "dest": "src/server/solar-server.mjs" }
   ]
 }
