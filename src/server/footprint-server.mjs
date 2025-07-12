@@ -55,8 +55,8 @@ app.post('/api/huella-carbono', (req, res) => {
     }
 });
 
-const PORT = 3008;
-//app.listen(PORT, '127.0.0.1', () => {
+// Iniciar servidor - Garantizando que  se procese tanto en ambiente local como a puerto dinámico entregado automáticamente.
+const PORT = process.env.PORT || 3008;
 app.listen(PORT, '0.0.0.0', () => {//facilitando acceder desde diferentes maquinas en la misma red
     console.log(`4 - API corriendo en el puerto ${PORT}`);
 })

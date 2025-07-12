@@ -1,0 +1,42 @@
+services:
+  - type: web
+    name: consumo-api
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node src/server/consumo-server.mjs
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: $PORT
+    domains:
+      - consumo-api.onrender.com
+
+  - type: web
+    name: footprint-api
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node src/server/footprint-server.mjs
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: $PORT
+    domains:
+      - footprint-api.onrender.com
+
+  - type: web
+    name: solar-api
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node src/server/solar-server.mjs
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: $PORT
+    domains:
+      - solar-api.onrender.com
