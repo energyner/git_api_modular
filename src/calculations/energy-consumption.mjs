@@ -1,22 +1,17 @@
-export function calcularConsumoEnergetico(req, res) {
+// src/calculations/energy-consumption.mjs
+export function calcularConsumoEnergetico(parametros) { // Ahora 'parametros' será el objeto { potencia, horas }
     console.log("1.1 - Calculando consumo-energetico");
-
-    const { potencia, horas } = req.body;
-
-    if (!potencia || !horas) {
-        console.log("1.1.1 - Error: Faltan parámetros");
-        return res.status(400).json({
-            error: "Faltan parámetros: potencia y horas son requeridos"
-        });
-    }
+    const { potencia, horas } = parametros; // ¡Esto ahora desestructurará correctamente del objeto!
 
     try {
         console.log("Parámetros recibidos:", potencia, horas);
-        const resultado = parseFloat(potencia) * parseFloat(horas); // Asegúrate de que sean números
+        // ¡IMPORTANTE! Ya no necesitas parseFloat aquí, ya se hizo en handleConsumo
+        const resultado = potencia * horas; // Simplemente la operación matemática directa
         console.log("1.2 - Cálculo resuelto:", resultado);
-        res.json({ consumo_energetico: resultado });
+        return resultado ;
+
     } catch (error) {
         console.error("Error al calcular el consumo energético:", error);
-        res.status(500).json({ error: "Error interno al calcular el consumo energético." });
+        throw new Error("Error interno en la lógica de cálculo consumo energetico: " + error.message);
     }
 }

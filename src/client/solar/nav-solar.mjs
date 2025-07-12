@@ -15,7 +15,7 @@ document.getElementById('produccion-form').addEventListener('submit', (event) =>
     const eficiencia = document.getElementById('eficiencia').value;
 
 // Realizar la solicitud al servidor
-    fetch('http://localhost:3010/api/produccion-solar', {
+    fetch('/api/produccion-solar', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -36,7 +36,7 @@ document.getElementById('produccion-form').addEventListener('submit', (event) =>
 // Actualizar la interfaz del navegador con el resultado
         const resultadoSolar = document.getElementById('resultadoSolar');
         resultadoSolar.textContent = `Produccion solar calculada: ${data.produccion_solar} kWh`;
-        resultadoSolar.style.color = "red"; // Estilo opcional para destacar el texto
+        resultadoSolar.style.color = "green"; // Estilo opcional para destacar el texto
     })
     .catch(error => {
         console.error('Error al calcular la produccion solar:', error);

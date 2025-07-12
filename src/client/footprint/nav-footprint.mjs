@@ -6,7 +6,7 @@
  * formularios y los mensajes de impresion.  */
 
 //API huella-carbono
-const api_Url = 'http://localhost:3008';
+
 document.getElementById("calcular").addEventListener("click", async function (event) {
     event.preventDefault();
 console.log("Formulario enviado con los datos:");
@@ -26,7 +26,7 @@ console.log("Formulario enviado con los datos:");
 
     try {
         // Enviar los datos al servidor
-        const response = await fetch(api_Url + "/api/huella-carbono", {
+        const response = await fetch("/api/huella-carbono", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

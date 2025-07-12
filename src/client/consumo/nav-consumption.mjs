@@ -11,7 +11,7 @@ document.getElementById('consumo-form').addEventListener('submit', (event) => {
     const horas = document.getElementById('horas').value;
 
 // Realizar la solicitud al servidor
-    fetch('http://localhost:3006/api/consumo-energetico', {
+    fetch('/api/consumo-energetico', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -40,7 +40,7 @@ document.getElementById('consumo-form').addEventListener('submit', (event) => {
 // Mostrar mensaje de error en el navegador
         const resultadoConsumo = document.getElementById('resultadoConsumo');
         resultadoConsumo.textContent = `Error: ${error.message}`;
-        resultadoConsumo.style.color = "green"; // Estilo opcional para destacar el error
+        resultadoConsumo.style.color = "red"; // Estilo opcional para destacar el error
     });
 });
 

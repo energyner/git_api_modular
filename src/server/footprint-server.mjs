@@ -1,20 +1,11 @@
-// 1- SERVIDOR EXPRESS - PUERTO 3008
-import express from 'express';
-import cors from 'cors';
-import {calcularHuellaCarbono} from '../calculations/carbon-footprint.mjs';
+// src/server/footprint-server.mjs PARA RENDER
+// Ya no necesitamos express ni cors aquí, ni app.listen()
+import { calcularHuellaCarbono } from '../calculations/carbon-footprint.mjs';
 
-const app = express();
+// Exportamos la función manejadora para la ruta POST
+export const handleFootprint = (req, res) => {
+    console.log("3.1 - Procesando huella-carbono"); // Este log se verá en los logs de Render
 
-// Middlewares
-app.use(cors()); 
-app.use(express.json());
-
-// 2- RUTAS GET PARA CADA API
-
-
-console.log("3.1 - Calculando  huella-carbono ")
-// Ruta POST para calcular la huella de carbono
-app.post('/api/huella-carbono', (req, res) => {
     try {
         const parametros = req.body;
 
@@ -50,13 +41,9 @@ app.post('/api/huella-carbono', (req, res) => {
         res.status(200).json(resultado);
         console.log("3.2 Cálculo completado para huella-carbono:", resultado);
     } catch (error) {
-        console.error("Error al procesar la solicitud:", error);
+        console.error("Error al procesar la solicitud de huella de carbono:", error);
         res.status(500).json({ error: "Error interno del servidor. Intente nuevamente más tarde." });
     }
-});
+};
 
-// Iniciar servidor - Garantizando que  se procese tanto en ambiente local como a puerto dinámico entregado automáticamente.
-const PORT = process.env.PORT || 3008;
-app.listen(PORT, '0.0.0.0', () => {//facilitando acceder desde diferentes maquinas en la misma red
-    console.log(`4 - API corriendo en el puerto ${PORT}`);
-})
+// No hay app.listen() aquí. Este archivo solo exporta funciones.
