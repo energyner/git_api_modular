@@ -28,9 +28,9 @@ const proxyTo = (baseUrl) => async (req, res) => {
     res.status(502).send(`Error al conectar con ${baseUrl}: ${error.message}`);
   }
 };
-app.use('/api/consumo', proxyTo('https://consumo-service-xxxxxx.onrender.com'));
-app.use('/api/footprint', proxyTo('https://footprint-service-xxxxxx.onrender.com'));
-app.use('/api/solar', proxyTo('https://solar-service-xxxxxx.onrender.com'));
+app.use('/api/consumo', proxyTo('https://consumo-service-energyner.onrender.com '));
+app.use('/api/footprint', proxyTo('https://footprint-service-energyner.onrender.com'));
+app.use('/api/solar', proxyTo('https://solar-service-energyner.onrender.com'));
 
 app.listen(PORT, () => {
   console.log(`🚀 Proxy activo en el puerto ${PORT}`);

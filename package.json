@@ -4,13 +4,13 @@
   "description": "",
   "main": "src/server/index.mjs",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start-consumo": "node src/server/consumo-server.mjs",
-    "start-footprint": "node src/server/footprint-server.mjs",
-    "start-solar": "node src/server/solar-server.mjs",
-    "start-dev": "concurrently \"npm run start-consumo\" \"npm run start-footprint\" \"npm run start-solar\"",
-    "start:all": "npm-run-all --parallel start start:serv2 start:serv3"
-  },
+   "start-gateway": "node src/server/index.mjs",
+  "start-consumo": "node src/server/consumo-server.mjs",
+  "start-footprint": "node src/server/footprint-server.mjs",
+  "start-solar": "node src/server/solar-server.mjs",
+  "start-dev": "concurrently \"npm run start-consumo\" \"npm run start-footprint\" \"npm run start-solar\""
+},
+
   "keywords": [],
   "author": "energyner",
   "license": "ISC",
