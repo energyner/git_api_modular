@@ -33,7 +33,7 @@ export const handleSolar = (req, res) => {
 };
 // ...
 
-// Opcional: Si quieres un manejador para la ruta GET, también lo exportas
+// Opcional
 export const getSolarInfo = (req, res) => {
   console.log("1 - Captando solicitud GET en /api/produccion-solar");
   res.send("Usa POST para calcular la produccion-solar de paneles solares.");

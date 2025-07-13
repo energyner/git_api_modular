@@ -46,4 +46,4 @@ export const handleFootprint = (req, res) => {
     }
 };
 
-// No hay app.listen() aquí. Este archivo solo exporta funciones.
+.
