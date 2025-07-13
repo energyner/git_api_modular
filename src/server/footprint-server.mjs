@@ -45,5 +45,3 @@ export const handleFootprint = (req, res) => {
         res.status(500).json({ error: "Error interno del servidor. Intente nuevamente más tarde." });
     }
 };
-
-.
