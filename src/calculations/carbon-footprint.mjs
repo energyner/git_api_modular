@@ -33,7 +33,7 @@ export function calcularHuellaCarbono({ state, elect = 0, gas = 0, water = 0, lp
     const l = Math.round(lpg * 3) || 0;
     const o = Math.round(gn * 0.117) || 0;
     const f = Math.round(fly * coef_fly) || 0;
-    const u = Math.round(cogs * 77) || 0;
+    const u = Math.round(cogs * 0.77) || 0;
 
     // Cálculo total
     const resultado = Math.round(e + t + c + l + o + f + u);
