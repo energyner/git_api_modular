@@ -25,21 +25,21 @@ document.getElementById('produccion-form').addEventListener('submit', (event) =>
     .then(response => {
         if (!response.ok) {
             return response.text().then(errorMessage => {
-                throw new Error(`Error en la solicitud: ${response.status} - ${errorMessage}`);
+                throw new Error(`Request error: ${response.status} - ${errorMessage}`);
             });
         }
         return response.json(); // Procesar la respuesta como JSON
     })
     .then(data => {
-        console.log('Produccion solar:', data);
+        console.log('Solar Production:', data);
 
 // Actualizar la interfaz del navegador con el resultado
         const resultadoSolar = document.getElementById('resultadoSolar');
-        resultadoSolar.textContent = `Produccion solar calculada: ${data.produccion_solar} Wh`;
+        resultadoSolar.textContent = `Solar Production - calculated: ${data.produccion_solar} Wh`;
         resultadoSolar.style.color = "green"; // Estilo opcional para destacar el texto
     })
     .catch(error => {
-        console.error('Error al calcular la produccion solar:', error);
+        console.error('Error calculating solar production:', error);
 
 // Mostrar mensaje de error en el navegador
         const resultadoSolar = document.getElementById('resultadoSolar');

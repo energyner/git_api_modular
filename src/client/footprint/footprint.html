@@ -3,22 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>API Huella de Carbono </title>
+    <title>API – Carbon Footprint </title>
      <!--Aplicando estilo a una estructura responsivo de tres columnas -->
  <link rel="stylesheet" href="style-footprint.css" type="text/css"  >
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
 <header>
-   <h3> APIs - Calculador Huella de Carbono </h3>  
-   <p>Los scripts y ejercicios se encuentran en el Libro 7 Séptima Parte, 
-    Programando Paso a Paso y Más a la venta en Amazon..</p>
+<h3> API – Carbon Footprint Calculator </h3>
+<p>The scripts and exercises can be found in *Book 7, Part 7: Programming Step-by-Step and More*, available for purchase on Amazon.</p>
 </header>
 <!--3 Divisiones responsives-->
 <div class="wrapper"> 
     <div class="column"> <!-- Primera división -->
       <h3 class="subcapitulo1"> Calculador Huella de Carbono</h3>
-        <p><b>2.7.1.3 - 1 API Huella de Carbono</b></p>
+        <p><b> API – Carbon Footprint</b></p>
         <!--API Huella de Carbono-->
         <form id="formulario">
             <label>Estado:</label>
@@ -76,115 +75,115 @@
             <option value="WY">Wyoming</option>
 
             </select>
-            <label>Electricidad (kWh):</label>
+            <label>Electricity (kWh):</label>
             <input type="number" id="elect" placeholder="kWh">
-            <label>Gas (galones):</label>
+            <label>Gas (gal):</label>
             <input type="number" id="gas" placeholder="galones">
-            <label>Agua (pies cúbicos):</label>
+            <label>Water (cubic feet):</label>
             <input type="number" id="water" placeholder="pies cúbicos">
-            <label>LPG (galones):</label>
+            <label>LPG (gal):</label>
             <input type="number" id="lpg" placeholder="galones">
-            <label>Gas Natural (pies cúbicos):</label>
+            <label>Natural Gas (cubic feet):</label>
             <input type="number" id="gn" placeholder="pies cúbicos">
-            <label>Distancia de vuelo (millas):</label>
+            <label>Flight distance traveled (miles):</label>
             <input type="number" id="fly" placeholder="millas">
-            <label>Costos operativos (USD):</label>
+            <label>Food and Service Costs (USD):</label>
             <input type="number" id="cogs" placeholder="USD">
-            <label>Número de personas:</label>
+            <label>Number of people:</label>
             <input type="number" id="person" placeholder="Numero">
-            <p>Realiza el calculo</p>
-            <button id="calcular">Calcular</button>
+            <p>Do the calculation.</p>
+            <button id="calcular">Calculate</button>
         </form>
         
         <div >
-            <label>Resultado Total:lb_CO2</label>
+            <label>Total Result:lb_CO2</label>
             <input id="resultado" readonly>
-            <label>Estado:</label>
+            <label>State:</label>
             <input id="estado" readonly>
-            <label>Huella Per Cápita:lb_CO2/u</label>
+            <label>Per Capita Footprint:lb_CO2/u</label>
             <input id="percapita" readonly>
-            <label>Huella/pc Estado:lb_CO2/u</label>
+            <label>Fingerprint/PC Status:lb_CO2/u</label>
             <input id="per_capita_estado" readonly>
-            <label>Promedio/pc USA:lb_CO2/u</label>
+            <label>Average/PC USA:lb_CO2/u</label>
             <input id="promedioUSA" readonly>
-            <label>Promedio/pc Mundo:lb_CO2/u</label>
+            <label>World Average per Capita:lb_CO2/u</label>
             <input id="promedioMundial" readonly>
-            <label>Porciento/pc Estado:</label>
+            <label>State Percentage:</label>
             <input id="porcentajeEstado" readonly>
-            <label>Porciento/pc USA:</label>
+            <label>Percent/pc (%) USA:</label>
             <input id="porcentajeUSA" readonly>
-            <label>Porciento/pc Mundo:</label>
-            <input id="porcentajeMundial" readonly>
+            <label>Percentage /pc  % World:</label>
+            <input id="porcenMundial" readonly>
 
 
         </div>
     
     </div>
 
-    <div class="column"> <!-- Segunda división -->
-     <h3 class="subcapitulo1"> Contribuyendo a un Futuro Sostenible </h3>    
-    <p><b>Descripción</b></p>
-    <p>La API Huella de Carbono es una herramienta avanzada que permite calcular 
-        con facilidad el impacto ambiental generado por el consumo de energía y 
-        recursos naturales dentro de un núcleo familiar. Mediante un análisis 
-        detallado de factores como electricidad, gas, agua, transporte y costos operativos, 
-        esta API ofrece a individuos y organizaciones la posibilidad de medir 
-       las emisiones de CO₂ en función de sus hábitos de consumo. 
-        Además, facilita la comparación de su huella de carbono con promedios 
-        locales y globales, brindando una visión clara sobre su impacto en el 
-        medio ambiente y promoviendo la adopción de prácticas más sostenibles.</p>
+    <div class="column"> <!-- Second division -->
+     <h3 class="subcapitulo1"> Contributing to a Sustainable Future </h3>    
+    <p><b>Description</b></p>
+    <p>The Carbon Footprint API is an advanced tool that allows users to easily calculate 
+        the environmental impact generated by the consumption of energy and 
+        natural resources within a household. Through a detailed analysis 
+        of factors such as electricity, gas, water, transportation, and operational costs, 
+        this API enables individuals and organizations to measure 
+        CO₂ emissions based on their consumption habits. 
+        It also facilitates the comparison of their carbon footprint with local 
+        and global averages, providing a clear understanding of their environmental impact 
+        and encouraging the adoption of more sustainable practices.</p>
 
-        <p><b>Utilidad</b></p>
-        <p>Esta API ofrece un cálculo rápido, preciso y detallado de la huella de carbono, 
-        permitiendo a las personas comprometidas con la sostenibilidad tomar decisiones 
-        acertadas y adoptar prácticas más responsables. Más que una herramienta de medición 
-        impulsa la conciencia ambiental al demostrar cómo cada individuo y su familia 
-        contribuye a la generación de emisiones según sus hábitos de consumo. 
-        Su integración con sistemas de gestión ambiental y proyectos ecológicos, 
-        tanto locales como globales, facilita la optimización del uso de energía, 
-        la reducción de emisiones y el avance hacia una mayor eficiencia energética a nivel mundial.</p>
+    <p><b>Usefulness</b></p>
+    <p>This API offers fast, accurate, and detailed carbon footprint calculations, 
+        allowing people committed to sustainability to make informed decisions 
+        and adopt more responsible practices. More than just a measurement tool, 
+        it promotes environmental awareness by showing how each individual and their family 
+        contribute to emissions according to their consumption habits. 
+        Its integration with environmental management systems and ecological projects, 
+        both local and global, helps optimize energy use, 
+        reduce emissions, and advance toward greater energy efficiency worldwide.</p>
 
-    <p><b>Beneficios</b></p>
-    <p>Al utilizar la API, los usuarios pueden evaluar, comparar y mejorar 
-        los hábitos de consumo energético. Esto fomenta la adopción de tecnologías limpias, 
-        impulsa la educación ambiental y promueve un estilo de vida más sostenible. 
-        Además, ofrece información clave para que empresas y gobiernos 
-        establezcan políticas de reducción de emisiones.</p>
-     <p><b><i>a) Impacto Global</i></b></p>
-     <p>El calculador Huella de Carbono contribuye significativamente a la lucha 
-        contra el cambio climático. Permite a países y organizaciones medir su impacto 
-        y establecer estrategias para reducir emisiones, promoviendo el uso de energías 
-        renovables y tecnologías limpias. También facilita la colaboración entre 
-        entidades internacionales en el desarrollo de soluciones sustentables.</p>
-    <p><b><i>b) Beneficios para la Comunidad Local</i></b></p>
-    <p>A nivel local, esta API ayuda a hogares y negocios a comprender su impacto ambiental 
-        y adoptar prácticas más responsables. Brinda datos accesibles que pueden impulsar 
-        cambios en el consumo energético, influir en regulaciones ecológicas y apoyar 
-        iniciativas comunitarias enfocadas en la reducción de la huella de carbono.</p>
+    <p><b>Benefits</b></p>
+    <p>By using the API, users can evaluate, compare, and improve 
+        their energy consumption habits. This encourages the adoption of clean technologies, 
+        promotes environmental education, and supports a more sustainable lifestyle. 
+        It also provides key information for companies and governments 
+        to establish emission‑reduction policies.</p>
 
-       <p><b>Conclusión</b></p>
-       <p>El calculador Huella de Carbono es una herramienta clave para la 
-        transformación sostenible. Su implementación en distintos sectores 
-        facilita la reducción de emisiones y mejora 
-        la calidad del medio ambiente a nivel global y local. </p>
+    <p><b><i>a) Global Impact</i></b></p>
+    <p>The Carbon Footprint Calculator contributes significantly to the fight 
+        against climate change. It enables countries and organizations to measure their impact 
+        and establish strategies to reduce emissions, promoting the use of renewable energy 
+        and clean technologies. It also facilitates collaboration among 
+        international entities in the development of sustainable solutions.</p>
 
-        <p><b>¡Invitación a Colaboradores!</b></p>
-        <p>Para mejorar la funcionalidad de la API, invitamos a desarrolladores, 
-            científicos de datos y expertos en sostenibilidad a contribuir con su 
-            conocimiento y experiencia. A través de la incorporación de nuevas características, 
-            algoritmos más avanzados y optimización del cálculo de emisiones, 
-            podemos potenciar aún más el impacto de esta herramienta. </p>
+    <p><b><i>b) Benefits for the Local Community</i></b></p>
+    <p>At the local level, this API helps households and businesses understand their environmental impact 
+        and adopt more responsible practices. It provides accessible data that can drive 
+        changes in energy consumption, influence ecological regulations, and support 
+        community initiatives focused on reducing the carbon footprint.</p>
 
+    <p><b>Conclusion</b></p>
+    <p>The Carbon Footprint Calculator is a key tool for sustainable transformation. 
+        Its implementation across different sectors 
+        facilitates emission reduction and improves 
+        environmental quality at both global and local levels. </p>
 
-    
-    </div>
+    <p><b>Invitation to Collaborators!</b></p>
+    <p>To enhance the functionality of the API, we invite developers, 
+        data scientists, and sustainability experts to contribute their 
+        knowledge and experience. Through the incorporation of new features, 
+        more advanced algorithms, and optimized emission‑calculation methods, 
+        we can further strengthen the impact of this tool. </p>
+</div>
+
     
 </div>
 
 
 </div>
 <footer>
-    <p>© 2025  APIs. (Cálculos Técnicos)</p>
+    <p>© 2026   APIs. A modular solution—expandable and scalable to new applications.</p>
 </footer>
 
 

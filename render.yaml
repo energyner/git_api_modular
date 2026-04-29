@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: git_api_modular
+    name: api-modular-render  
     runtime: node
     plan: free
     buildCommand: npm install

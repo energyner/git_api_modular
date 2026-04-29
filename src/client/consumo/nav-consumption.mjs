@@ -21,21 +21,21 @@ document.getElementById('consumo-form').addEventListener('submit', (event) => {
     .then(response => {
         if (!response.ok) {
             return response.text().then(errorMessage => {
-                throw new Error(`Error en la solicitud: ${response.status} - ${errorMessage}`);
+                throw new Error(`Request error: ${response.status} - ${errorMessage}`);
             });
         }
         return response.json(); // Procesar la respuesta como JSON
     })
     .then(data => {
-        console.log('Consumo energético:', data);
+        console.log('Energy Consumption:', data);
 
 // Actualizar la interfaz del navegador con el resultado
         const resultadoConsumo = document.getElementById('resultadoConsumo');
-        resultadoConsumo.textContent = `Consumo energético calculado: ${data.consumo_energetico} kWh`;
+        resultadoConsumo.textContent = `Calculated Energy Consumption: ${data.consumo_energetico} kWh`;
         resultadoConsumo.style.color = "green"; // Estilo opcional para destacar el texto
     })
     .catch(error => {
-        console.error('Error al calcular el consumo:', error);
+        console.error('Error calculating consumption:', error);
 
 // Mostrar mensaje de error en el navegador
         const resultadoConsumo = document.getElementById('resultadoConsumo');

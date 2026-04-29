@@ -3,88 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>  API Producción Solar </title>
+    <title>  Solar Production API </title>
      <!--Aplicando estilo a una estructura responsivo de tres columnas -->
  <link rel="stylesheet" href="./style-solar.css" type="text/css"  >
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
 <header>
-    <h3> APIs - Calculador Producción Solar </h3>  
-   <p>Los scripts y ejercicios se encuentran en el Libro 7 Séptima Parte, 
-    Programando Paso a Paso y Más a la venta en Amazon..</p>
+    <h3> Solar Production API Calculator</h3>  
+<p>The scripts and exercises can be found in *Book 7, Part 7: Programming Step-by-Step and More*, available for purchase on Amazon.</p>
+</header>
 </header>
 <!--2 Divisiones responsives-->
 <div class="wrapper"> 
     <div class="column"> <!-- Primera división -->
-        <h3 class="subcapitulo1">API en una arquitectura modular</h3>
-<h3 class="subcapitulo2"> Calculador básico de la producción solar, en kWh.</h3>
+       <h3 class="subcapitulo1">API in a Modular Architecture</h3>
+        <h3 class="subcapitulo2"> Basic Solar Production Calculator (in kWh)</h3>
 
-<p><b>Algoritmos en JavaScript desarrolado en ambiente Node.js y Express.</b><br>
-Para saber más de esta práctica, consultar el Libro 5 - Instructivo - 
-Programando Paso a Paso y Más.</p>
+<p><b>JavaScript Algorithms developed in a Node.js and Express environment.</b><br>
+To learn more about this exercise, please refer to Book 5 — Instructional Guide —
+Programming Step-by-Step and Beyond.</p>
 
-<p><b>API Produccion Solar</b></p>
+<p><b>Solar Production API</b></p>
 <!--API Produccion Solar-->
 <form id="produccion-form">
     <label for="area">Área: m2</label>
     <input type="number" id="area" name="area" placeholder="area"  required>
-    <label for="irradiacion">Irradiación: W/h-m2</label>
+    <label for="irradiacion">Irradiation: W/h-m2</label>
     <input type="number" id="irradiacion" name="irradiacion" placeholder="irradiacion"  required>
-    <label for="eficiencia">Eficiencia: (0 y 1)</label>
+    <label for="eficiencia">Efficiency: (0 y 1)</label>
     <input type="number" id="eficiencia" name="eficiencia" placeholder="eficiencia" step="0.01" required>
-    <button type="submit">Calcular</button>
+    <button type="submit">Calculate</button>
 </form>
 
-<h4> Resultado Producción Solar, Wh:</h4>
+<h4> Solar Production Results, Wh:</h4>
 <p id="resultadoSolar"></p>
 
 </div>
 
-    <div class="column"> <!-- Segunda división -->
-        <h3 class="subcapitulo1"> Descripción del producto.</h3>
-        <p><b>Descripción </b></p>
-        <p>Hemos desarrollado una versión inicial de esta herramienta para 
-            facilitar el cálculo de la producción de electricidad generada 
-            por colectores solares. Nuestro objetivo es expandir su estructura 
-            progresivamente, incorporando nuevas propiedades y métodos que optimicen 
-            su funcionalidad. Esto permitirá mejorar su utilidad en la toma de 
-            decisiones y en la determinación de parámetros clave 
-            para evaluar la viabilidad del uso de los paneles solares.</p>
+    <div class="column"> <!-- Second division -->
+        <h3 class="subcapitulo1"> Product Description</h3>
+        <p><b>Description </b></p>
+        <p>We have developed an initial version of this tool to 
+            facilitate the calculation of electricity production generated 
+            by solar collectors. Our goal is to progressively expand its structure, 
+            incorporating new properties and methods that enhance 
+            its functionality. This will improve its usefulness in decision‑making 
+            and in determining key parameters 
+            for evaluating the feasibility of using solar panels.</p>
 
-        <p><b>Utilidad</b></p>       
-        <p>Somos conscientes de que este tipo de herramienta, al simplificar cálculos 
-            complejos relacionados con el uso energético, puede tener un impacto significativo 
-            tanto a nivel local como global. Su utilidad va más allá de la automatización de 
-            procesos, ya que contribuye a la optimización de recursos, facilita la toma de 
-            decisiones y promueve el desarrollo sostenible en diversas comunidades</p>
+        <p><b>Usefulness</b></p>       
+        <p>We are aware that this type of tool, by simplifying complex calculations 
+            related to energy use, can have a significant impact 
+            both locally and globally. Its usefulness goes beyond process automation, 
+            as it contributes to resource optimization, facilitates decision‑making, 
+            and promotes sustainable development in various communities.</p>
 
-        <p><b>Beneficios </b></p>
-            <p><b><i>a) Impacto Global</i></b></p>
-            <p><b>•	Promoción de energías renovables:</b> Facilita el acceso a cálculos
-                precisos, incentivando la adopción de energía solar en diversas comunidades.<br>
-             <b> •	Optimización de recursos:</b> Permite a gobiernos, industrias y hogares 
-             evaluar la viabilidad de los paneles solares y mejorar su eficiencia.<br>
-            <b>•	Contribución a la lucha contra el cambio climático: </b>Al impulsar el 
-                uso de energías limpias, ayuda a reducir la dependencia 
-                de combustibles fósiles y disminuir emisiones de carbono.
-        </p>
-        <p><b><i>b) Beneficios para la Comunidad Local</i></b></p>
-        <p><b>•	Empoderamiento de usuarios y empresas: </b>Cualquier persona, sin necesidad 
-            de conocimientos avanzados, puede estimar su producción solar y tomar mejores 
-            decisiones energéticas.<br>
-        <b>•	Optimización de inversiones: </b> Ayuda a hogares y empresas a calcular 
-            con mayor precisión el retorno de inversión en sistemas solares.<br>
-        <b>•	Fomento del desarrollo sostenible: </b>Las ciudades pueden promover 
-            políticas energéticas basadas en información más accesible y concreta.
+        <p><b>Benefits </b></p>
+        <p><b><i>a) Global Impact</i></b></p>
+        <p><b>• Promotion of renewable energy:</b> Provides access to accurate calculations, 
+                encouraging the adoption of solar energy in diverse communities.<br>
+             <b>• Resource optimization:</b> Allows governments, industries, and households 
+             to evaluate the feasibility of solar panels and improve their efficiency.<br>
+            <b>• Contribution to the fight against climate change:</b> By promoting the 
+                use of clean energy, it helps reduce dependence 
+                on fossil fuels and decrease carbon emissions.
         </p>
 
+        <p><b><i>b) Benefits for the Local Community</i></b></p>
+        <p><b>• Empowerment of users and businesses:</b> Anyone, without advanced knowledge, 
+            can estimate their solar production and make better 
+            energy decisions.<br>
+        <b>• Investment optimization:</b> Helps households and businesses calculate 
+            more accurately the return on investment in solar systems.<br>
+        <b>• Promotion of sustainable development:</b> Cities can implement 
+            energy policies based on more accessible and concrete information.
+        </p>
+    </div>
 
- </div>
 
 </div>
 <footer>
-    <p>© 2025  Plantilla - APIs. (Cálculos Técnicos)</p>
+<p>© 2026   APIs. A modular solution—expandable and scalable to new applications.</p>
 </footer>
 
 <script type="module" src="./nav-solar.mjs"></script>

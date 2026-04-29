@@ -9,7 +9,7 @@
 
 document.getElementById("calcular").addEventListener("click", async function (event) {
     event.preventDefault();
-console.log("Formulario enviado con los datos:");
+console.log("Form submitted with the data:");
     // Obtener los valores del formulario
     const state = document.getElementById("state").value;
     const elect = parseFloat(document.getElementById("elect").value) || 0;
