@@ -1,26 +1,27 @@
 {
   "name": "git_api_energyner",
   "version": "1.0.0",
-  "description": "Monorepo para API y Frontend Modular en Render",
+  "description": "API modular desplegable en Render",
   "main": "src/server/index.mjs",
-  "type": "module",  
+  "type": "module",
+
   "scripts": {
-    "start": "node src/server/index.mjs", 
-    "start-dev": "concurrently \"npm run start-consumo-local\" \"npm run start-footprint-local\" \"npm run start-solar-local\"",
-    "start-consumo-local": "node src/server/consumo-server.mjs",
-    "start-footprint-local": "node src/server/footprint-server.mjs",
-    "start-solar-local": "node src/server/solar-server.mjs"
+    "start": "node src/server/index.mjs",
+    "dev": "nodemon src/server/index.mjs",
+    "build": "echo \"No build step required\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+
+  "keywords": ["api", "node", "express", "render"],
   "author": "energyner",
   "license": "ISC",
+
   "dependencies": {
-    "cors": "^2.8.5",
-    "express": "^4.19.2",    
-    "body-parser": "^1.20.2" 
+    "express": "^4.19.2",
+    "cors": "^2.8.5"
   },
-  "devDependencies": {   
-    "concurrently": "^9.1.2",
-    "npm-run-all": "^4.1.5"
+
+  "devDependencies": {
+    "nodemon": "^3.1.0"
   }
 }

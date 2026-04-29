@@ -1,6 +1,6 @@
 // src/server/solar-server.mjs PARA RENDER
-// Ya no necesitamos express ni cors aquí, ni app.listen()
-// src/server/solar-server.mjs
+
+
 import { calcularProduccionSolar } from "../calculations/solar-production.mjs";
 
 export const handleSolar = (req, res) => {
